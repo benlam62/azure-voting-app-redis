@@ -16,7 +16,6 @@ title =         app.config['TITLE']
 
 # Redis configurations
 redis_server = os.environ['REDIS']
-title=redis_server
 
 # Redis Connection
 try:
@@ -26,8 +25,8 @@ except redis.ConnectionError:
     exit('Failed to connect to Redis, terminating.')
 
 # Change title to host name to demo NLB
-#if app.config['SHOWHOST'] == "true":
-#    title = socket.gethostname()
+if app.config['SHOWHOST'] == "true":
+    title = socket.gethostname()
 
 # Init Redis
 r.set(button1,0)
