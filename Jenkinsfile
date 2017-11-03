@@ -18,7 +18,7 @@ node {
     def webAppResourceGroup = 'linux-webapp'
     def webAppName = 'benlam-linux1'
     def acrName = 'benlamRegistry1'
-    def calculatorImageName = 'calculator'
+    def calculatorImageName = 'azure-calculator-api'
     def calculatorDeploymentName = 'deployments/azure-calculator-api'
     def calculatorPodName = 'azure-calculator-api'
     def voteFrontImageName = 'azure-vote-front'
